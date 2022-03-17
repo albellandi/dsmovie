@@ -5,10 +5,13 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { MoviePage } from "types/movie";
 import { BASE_URL } from "utils/requests";
+import './styles.css';
+
+
 
 function Listing() {
 
-
+    
     const [pageNumber, setPageNumber] = useState(0);
 
     const [page, setPage] = useState<MoviePage>({
